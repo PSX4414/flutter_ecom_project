@@ -15,7 +15,7 @@ class HomeHeader extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            height: 250,
+            height: 300,
             width: double.infinity,
             margin: EdgeInsets.symmetric(),
             // margin: EdgeInsets.all(getProportionateScreenWidth(20)),
@@ -23,12 +23,20 @@ class HomeHeader extends StatelessWidget {
             //   horizontal: getProportionateScreenWidth(20),
             //   vertical: getProportionateScreenWidth(15),
             // ),
+
             decoration: BoxDecoration(
               color: Color(0xFF4A3298),
               // borderRadius: BorderRadius.circular(20),
             ),
+            child: Image.asset("assets/images/ecomtest.png",
+                fit:BoxFit.fill
+            ),
 
           ),
+
+
+
+
           Container(
             height: 100,
               child: ProductCategories())
@@ -95,7 +103,7 @@ class ProductCategories extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.category,
+                        Icons.flight,
                         size: 35,
                       ),
                       // SizedBox(height: 2),
@@ -124,7 +132,7 @@ class ProductCategories extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.category,
+                        Icons.request_page_outlined,
                         size: 35,
                       ),
                       // SizedBox(height: 2),
@@ -153,7 +161,7 @@ class ProductCategories extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.category,
+                        Icons.data_usage,
                         size: 35,
                       ),
                       // SizedBox(height: 2),
@@ -182,7 +190,7 @@ class ProductCategories extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Icon(
-                        Icons.category,
+                        Icons.monetization_on,
                         size: 35,
                       ),
                       // SizedBox(height: 2),

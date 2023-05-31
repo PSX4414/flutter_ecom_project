@@ -16,11 +16,12 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       body: HomeBody(),
       bottomNavigationBar: BottomNavigationBar(
-        backgroundColor: Colors.white,
+        // backgroundColor: Colors.white,
+        selectedItemColor: Colors.green,
+        unselectedItemColor: Colors.grey,
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-            backgroundColor: Colors.black12,
+              icon: Icon(Icons.home,),
             label: 'Home',
           ),
           BottomNavigationBarItem(
